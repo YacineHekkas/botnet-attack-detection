@@ -1,0 +1,7 @@
+venv\scripts\activate
+pip install channels_redis
+pip install uvicorn
+pip install channels
+pip install djangorestframework
+daphne core.asgi:application
+python manage.py emit_labels
